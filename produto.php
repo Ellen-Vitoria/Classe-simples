@@ -7,17 +7,18 @@ Class Produto
     public $descricao;
     public $preco;
     public $qt;
-    public $taxa = 50;
+    public $taxa;
     public $frete;
 
+/*
     public function getPreco()
     {
         return $this->preco;
     }
 
-    public function setPreco($pr)
+    public function setPreco($preco) //Nome do Parâmetro pode ser o mesmo do Atributo
     {
-        $this->preco = $pr;
+        $this->preco = $preco;
     }
 
     public function getQt()
@@ -25,19 +26,30 @@ Class Produto
         return $this->qt;
     }
 
-    public function setQT($q)
+    public function setQt($q) //Nesse, o nome do Parâmetro é diferente do Atributo
     {
         $this->qt = $q;
     }
+*/
 
+    //OPÇÃO 1: Sem Parâmetros
     public function calcularFrete()
     {
-        $this->frete = $this->preco + $this->qt + $this->taxa;
+        $this->frete = ($this->preco * $this->qt) + $this->taxa;
+        echo "O Frete do Produto é R$ {$this->frete}";
     }
+
+    //OPÇÃO 2: Com Parâmetros - Sem Get-Set
+ /*  
+    public function calcularFrete($preco, $qt, $taxa)
+    {
+        $this->preco = $preco;
+        $this->qt = $qt;
+        $this->taxa = $taxa;
+
+        $this->frete = ($this->preco * $this->q) + $this->taxa;
+
+        echo "O Frete do Produto é {$this->frete}";
+    }
+*/ 
 }
-
-$fone = new Produto;
-$fone->setPreco(100);
-$fone->setQT(1);
-
-echo "O valor a pagar e de R$ {$fone->calcularFrete()}";
