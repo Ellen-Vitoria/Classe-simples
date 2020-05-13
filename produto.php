@@ -32,24 +32,9 @@ Class Produto
     }
 */
 
-    //OPÇÃO 1: Sem Parâmetros
     public function calcularFrete()
     {
         $this->frete = ($this->preco * $this->qt) + $this->taxa;
         echo "O Frete do Produto é R$ {$this->frete}";
     }
-
-    //OPÇÃO 2: Com Parâmetros - Sem Get-Set
- /*  
-    public function calcularFrete($preco, $qt, $taxa)
-    {
-        $this->preco = $preco;
-        $this->qt = $qt;
-        $this->taxa = $taxa;
-
-        $this->frete = ($this->preco * $this->q) + $this->taxa;
-
-        echo "O Frete do Produto é {$this->frete}";
-    }
-*/ 
 }

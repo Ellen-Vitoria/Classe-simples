@@ -21,7 +21,7 @@ $produto->calcularFrete(); // Ou echo $produto->calcularFrete();
 $produto = new Produto2('Fone', 'Aparelho de escuta', 50, 2, 0.5); // Usando "_construct" é obrigatório inserir todos os valores direto na Instância
 echo "O Frete do {$produto->nome} é: R$ {$produto->calcularFrete()}"; // É recomendado colocar essa linha no Método, assim feito como na Classe anterior
 
-/* Sem o Método _construct, poderia ficar da seguinte forma*/
+/* Sem o Método _construct, ficaria da seguinte forma*/
 //$produto = new Produto();
 //$produto->nome = "Fone";
 //$produto->descricao = "Aparelho de escuta";

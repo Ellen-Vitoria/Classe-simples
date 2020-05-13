@@ -18,7 +18,20 @@ Class Produto2
         return ($this->preco * $this->qt) + $this->taxa;
     }
 
+/*
+    Poderia resumir tudo em um só Método:
+    
+    public function calcularFrete($preco, $qt, $taxa)
+    {
+        $this->preco = $preco;
+        $this->qt = $qt;
+        $this->taxa = $taxa;
+
+        $this->frete = ($this->preco * $this->q) + $this->taxa;
+
+        echo "O Frete do Produto é {$this->frete}";
+    }
+*/
 }
 
-$produto = new Produto2('Fone', 'Aparelho de escuta', 50, 2, 0.5); // Usando "_construct" é possível inserir todos os valores direto na Instância
-echo "O Frete do {$produto->nome} é: R$ {$produto->calcularFrete()}";
+
