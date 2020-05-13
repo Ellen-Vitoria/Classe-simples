@@ -21,4 +21,4 @@ Class Produto2
 }
 
 $produto = new Produto2('Fone', 'Aparelho de escuta', 50, 2, 0.5); // Usando "_construct" é possível inserir todos os valores direto na Instância
-echo "O Frete do {$produto->nome} é: R$ {produto->calcularFrete()}";
+echo "O Frete do {$produto->nome} é: R$ {$produto->calcularFrete()}";
