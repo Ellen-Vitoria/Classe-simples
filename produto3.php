@@ -43,4 +43,9 @@ Class Produto3
     {
         $this->frete = $frete;
     }
+
+    public function calcularFrete()
+    {
+        return ($this->getPreco() * $this->getQt()) + $this->getTaxa();
+    }
 }
