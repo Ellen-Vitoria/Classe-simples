@@ -14,12 +14,12 @@ $produto->qt = "2";
 $produto->taxa = "0.50";
 
 echo "Nome do Produto: {$produto->nome}<p>"; //Exibindo Valor que foi inserido ao Atributo $nome
-$produto->calcularFrete(); // Ou echo $produto->calcularFrete();
+$produto->calcularFrete(); // Ou echo $produto->calcularFrete(); // echo "{$produto->calcularFrete()}"
 
 
 //Classe Produto2 (com Parêmetro no Método):
 $produto = new Produto2('Fone', 'Aparelho de escuta', 50, 2, 0.5); // Usando "_construct" é obrigatório inserir todos os valores direto na Instância
-echo "O Frete do {$produto->nome} é: R$ {$produto->calcularFrete()}"; // É recomendado colocar essa linha no Método, assim feito como na Classe anterior
+echo "<p>O Frete do {$produto->nome} é: R$ {$produto->calcularFrete()}"; // É recomendado colocar essa linha no Método, assim feito como na Classe anterior
 
 /* Sem o Método _construct, ficaria da seguinte forma*/
 //$produto = new Produto();

@@ -35,6 +35,6 @@ Class Produto
     public function calcularFrete()
     {
         $this->frete = ($this->preco * $this->qt) + $this->taxa;
-        echo "O Frete do Produto é R$ {$this->frete}";
+        echo "O Frete do {$this->nome} é R$ {$this->frete}";
     }
 }
