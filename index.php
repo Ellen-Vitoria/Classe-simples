@@ -64,4 +64,4 @@ $produto->frete = $produto->calcularFrete();
 //print_r($produto);
 echo "<pre>", print_r($produto), "</pre>"; //echo '<pre>'; -- Deixar o código bem definido/formatado, fica melhor no browser
 
-echo "O Frete do {$produto->nome} é = R$ {$produto->calcularFrete()}";
+echo "O Frete do {$produto->nome} é = R$ {$produto->frete}";
