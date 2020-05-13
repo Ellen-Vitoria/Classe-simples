@@ -9,7 +9,7 @@ Class Produto3
         return $this->preco;
     }
 
-    public function setPreco($preco)
+    public function setPreco($preco) // Nome do parâmetro pode ou não ser o mesmo do Atributo
     {
         $this->preco = $preco;
     }
